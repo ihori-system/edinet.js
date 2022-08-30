@@ -1,0 +1,9 @@
+ignoreWords:
+  - btcnc
+words:
+  - edinet
+  - lcov
+  - resultset
+  - undici
+  - unmocked
+  - xbrl

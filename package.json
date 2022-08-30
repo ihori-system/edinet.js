@@ -1,0 +1,26 @@
+{
+  "name": "edinet",
+  "version": "0.0.1",
+  "description": "EDINET APIクライアント",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e": "jest --config=jest.config.e2e.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihori-system/edinet.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ihori-system/edinet.js/issues"
+  },
+  "homepage": "https://github.com/ihori-system/edinet.js#readme",
+  "devDependencies": {
+    "jest": "^29.0.1"
+  },
+  "dependencies": {
+    "undici": "^5.10.0"
+  }
+}
