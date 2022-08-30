@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-describe('getDocuments', () => {
+describe('findDocuments', () => {
   test('find by date', () => {
     expect(1).toEqual(1)
   })

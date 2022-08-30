@@ -1,11 +1,13 @@
 ignoreWords:
   - btcnc
 words:
+  - codepaths
   - edinet
   - horie
   - ihori
   - lcov
   - resultset
+  - tsbuildinfo
   - undici
   - unmocked
   - xbrl
