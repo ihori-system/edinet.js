@@ -1,3 +1,5 @@
+/* eslint-env jest */
+
 const { EdinetClient } = require('..')
 
 describe('xxx', () => {

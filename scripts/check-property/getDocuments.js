@@ -43,7 +43,7 @@ const RESULT_PROPERTIES = [
   'submitDateTime',
   'subsidiaryEdinetCode',
   'withdrawalStatus',
-  'xbrlFlag',
+  'xbrlFlag'
 ]
 
 const client = new EdinetClient()
@@ -52,9 +52,8 @@ const START_DATE = new Date('2021-04-01')
 const END_DATE = new Date('2021-04-10')
 
 const main = async () => {
-
+  // eslint-disable-next-line no-unmodified-loop-condition
   for (let targetDate = START_DATE; targetDate <= END_DATE; targetDate.setDate(targetDate.getDate() + 1)) {
-
     console.log(`[INFO] Request start. targetDate: ${targetDate.toISOString().split('T')[0]}`)
     const data = await client.getDocuments(targetDate.toISOString().split('T')[0], 2)
     console.log(`[INFO] Request end. targetDate: ${targetDate.toISOString().split('T')[0]}`)
@@ -79,7 +78,7 @@ const main = async () => {
     }
 
     if (data.results != null) {
-      for (let result of data.results) {
+      for (const result of data.results) {
         const diff = Object.keys(result).filter((k) => RESULT_PROPERTIES.includes(k) === false)
         if (diff.length > 0) {
           console.log(result)

@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  ci:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [16]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      # Ref: https://github.com/streetsidesoftware/cspell-action
+      - uses: streetsidesoftware/cspell-action@v1
+        with:
+          incremental_files_only: false
+
+      # Ref: https://github.com/actions/setup-node
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'npm'
+
+      - run: npm i
+
+      - run: npm run lint
+
+      - run: npm run test:unit
+
+      # - run: npm run test:types
