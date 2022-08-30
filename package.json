@@ -1,9 +1,14 @@
 {
-  "name": "edinet",
+  "name": "@ihori-system/edinet",
   "version": "0.0.1",
-  "description": "EDINET APIクライアント",
+  "description": "EDINET REST API client for Node.js",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
+    "lint": "standard",
+    "test:unit": "jest --config=jest.config.mjs",
     "test:e2e": "jest --config=jest.config.e2e.mjs"
   },
   "repository": {
@@ -11,16 +16,25 @@
     "url": "git+https://github.com/ihori-system/edinet.js.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Issei Horie",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ihori-system/edinet.js/issues"
   },
   "homepage": "https://github.com/ihori-system/edinet.js#readme",
   "devDependencies": {
-    "jest": "^29.0.1"
+    "jest": "^29.0.1",
+    "standard": "^17.0.0"
   },
   "dependencies": {
     "undici": "^5.10.0"
+  },
+  "standard": {
+    "ignore": [
+      "docs/"
+    ]
+  },
+  "tsd": {
+    "directory": "test"
   }
 }
