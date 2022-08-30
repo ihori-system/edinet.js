@@ -1,0 +1,2 @@
+# edinet.js
+EDINET APIクライアント
