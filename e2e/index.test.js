@@ -2,10 +2,10 @@
 
 const { EdinetClient } = require('..')
 
-describe('xxx', () => {
+describe('findDocuments', () => {
   test('xxx', async () => {
     const client = new EdinetClient()
-    const response = await client.getDocuments()
+    const response = await client.findDocuments()
     console.log(response)
     expect(1).toEqual(1)
   })
