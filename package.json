@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/ihori-system/edinet.js#readme",
   "devDependencies": {
-    "jest": "^29.0.1",
+    "jest": "^29.4.1",
     "standard": "^17.0.0",
     "tsd": "^0.23.0",
     "typedoc": "^0.23.11",
