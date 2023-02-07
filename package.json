@@ -34,7 +34,7 @@
     "typescript": "^4.8.2"
   },
   "dependencies": {
-    "undici": "^5.10.0"
+    "undici": "^5.18.0"
   },
   "standard": {
     "ignore": [
